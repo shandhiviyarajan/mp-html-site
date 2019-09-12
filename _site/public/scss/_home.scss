@@ -272,6 +272,8 @@ div.block-connect-with-us {
 
 .block-free-website {
   position: relative;
+
+
   h2 {
     small {
       font-size: 18px;
@@ -313,7 +315,7 @@ div.block-connect-with-us {
     text-decoration: none;
     background-image: linear-gradient(151deg, #0EACD1 0%, #0674A5 94%);
     font-size: 24px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 0px 10px 20px 10px;
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
@@ -332,6 +334,7 @@ div.block-connect-with-us {
       display: block;
       font-size: 12px;
       color: #fff;
+
       margin: 10px 0px;
       font-weight: normal;
 
@@ -339,12 +342,16 @@ div.block-connect-with-us {
 
   }
 
-  button.btn-start {
+  a.btn-start {
     background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
     color: #fff;
     width: 100%;
     height: 64px;
     border: none;
+      font-size:18px;
+      line-height:40px;
+      padding-top:10px;
+
 
   }
 }
@@ -413,6 +420,7 @@ div.block-connect {
         letter-spacing: 0;
         text-align: center;
         line-height: 22px;
+        font-weight:600;
         text-decoration: none;
       }
     }

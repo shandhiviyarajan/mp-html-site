@@ -49,49 +49,6 @@ header {
     header ul li:last-child {
       display: none; }
 
-@media screen and (max-width: 767px) {
-  header {
-    height: 60px;
-    overflow: hidden; }
-    header div.mobile_menu {
-      z-index: 2000;
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      right: 0px;
-      top: 5px;
-      width: 44px;
-      height: 44px;
-      font-size: 32px;
-      color: #2474A4; }
-    header div.logo img {
-      width: 60px;
-      margin: 0 auto;
-      display: block; }
-    header div.top-header {
-      display: none; }
-    header ul {
-      float: none;
-      padding: 0px; }
-      header ul li:last-child {
-        display: block; }
-    header ul li {
-      display: block; }
-      header ul li a {
-        height: auto;
-        display: block;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 5px 0px;
-        line-height: 30px; }
-        header ul li a:hover {
-          background: #2474A4;
-          color: #fff; }
-
-  header.expand {
-    height: 500px;
-    overflow-y: scroll; } }
 .home-block-one {
   position: relative;
   height: 600px;
@@ -1107,5 +1064,86 @@ div.blog-date {
   color: #818181;
   letter-spacing: 0;
   text-align: center; }
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px; }
+
+  header {
+    height: 60px;
+    overflow: hidden; }
+    header div.mobile_menu {
+      z-index: 2000;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      width: 44px;
+      height: 44px;
+      font-size: 32px;
+      color: #2474A4; }
+    header div.logo img {
+      width: 60px;
+      margin: 0 auto;
+      display: block; }
+    header div.top-header {
+      display: none; }
+    header ul {
+      float: none;
+      padding: 0px; }
+      header ul li:last-child {
+        display: block; }
+    header ul li {
+      display: block; }
+      header ul li a {
+        height: auto;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px 20px;
+        line-height: 30px; }
+        header ul li a:hover {
+          background: #2474A4;
+          color: #fff; }
+
+  header.expand {
+    height: 500px;
+    overflow-y: scroll; }
+
+  .home-block-event {
+    padding: 20px; }
+
+  .home-block-event .next-date-wrapper .next-date-text {
+    margin: 0px 0px 0px 0px;
+    line-height: 36px; }
+
+  .home-block-event .next-event-info .next-event-title {
+    color: #2474A4;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0px 10px 0px; }
+
+  .featured-video-block {
+    height: auto; }
+
+  .block-free-website a {
+    width: auto; }
+
+  div.block-connect, div.block-digital-training, div.block-connect-with-us {
+    height: auto; }
+
+  div.block-connect .connect-buttons {
+    display: flex;
+    flex-wrap: wrap; }
+
+  div.page-events a.event-item div.event-date {
+    padding-left: 20px;
+    float: left;
+    display: flex; }
+  div.page-events a.event-item img {
+    width: 100%; } }
 
 /*# sourceMappingURL=app.css.map */

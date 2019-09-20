@@ -46,8 +46,6 @@ header {
         header ul li a:hover {
           color: #194964;
           text-decoration: none; }
-      header ul li.active a {
-        background: #2474A4; }
     header ul li:last-child {
       display: none; }
 
@@ -94,11 +92,11 @@ header {
         display: block;
         font-size: 18px; }
     .home-block-event .next-date-wrapper .next-date-text {
-      margin: 0px 30px 0px 0px;
-      font-size: 32px;
+      margin: 20px 20px 0px 0px;
+      font-size: 36px;
       color: #000000;
       font-weight: 700;
-      line-height: 32px; }
+      line-height: 24px; }
       .home-block-event .next-date-wrapper .next-date-text span {
         display: block;
         font-size: 16px;
@@ -140,7 +138,7 @@ header {
 .featured-video-block {
   /* Rectangle 20: */
   background-image: linear-gradient(-127deg, #0C80A1 0%, #063E55 100%);
-  min-height: 700px;
+  height: 700px;
   padding: 60px 0px; }
   .featured-video-block div.block-title {
     font-size: 36px;
@@ -552,8 +550,7 @@ div.page-header {
     background-size: cover; }
   div.page-header.blog_bg {
     background: url("../images/blog_bg.jpg") center center no-repeat;
-    background-size: cover;
-    margin-bottom: 0px; }
+    background-size: cover; }
   div.page-header.about_bg {
     background: url("../images/about_bg.jpg") center center no-repeat;
     background-size: cover; }
@@ -592,12 +589,6 @@ div.page-content {
     margin: 0px 0px 20px 0px; }
     div.page-content .t-articles div.col-md-6 a:hover {
       background: #fff; }
-    div.page-content .t-articles div.col-md-6 a:active {
-      -webkit-transform: scale(0.98);
-      -moz-transform: scale(0.98);
-      -ms-transform: scale(0.98);
-      -o-transform: scale(0.98);
-      transform: scale(0.98); }
     div.page-content .t-articles div.col-md-6 a div.col-sm-6 p {
       color: #000;
       font-size: 14px;
@@ -658,15 +649,14 @@ div.page-content {
         z-index: 2000;
         width: 60%;
         height: 30%;
-        top: 60%;
+        /* top: 25%; */
         left: 20%;
         bottom: 0px;
         text-align: center; }
       .featured-blog div.col-md-3 a h3 {
-        font-size: 24px;
+        font-size: 18px;
         color: #FFFFFF;
-        text-align: center;
-        font-weight: bold; }
+        text-align: center; }
       .featured-blog div.col-md-3 a div.blog-category {
         font-size: 12px;
         font-weight: 300;
@@ -675,23 +665,11 @@ div.page-content {
       .featured-blog div.col-md-3 a div.created-date {
         color: #818181;
         font-size: 12px; }
-      .featured-blog div.col-md-3 a:hover figure img {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        transform: scale(1.1); }
     .featured-blog div.col-md-3 figure {
       display: block;
-      margin: 0px;
-      overflow: hidden; }
+      margin: 0px; }
       .featured-blog div.col-md-3 figure img {
-        width: 100%;
-        -webkit-transition: 0.2s ease;
-        -moz-transition: 0.2s ease;
-        -ms-transition: 0.2s ease;
-        -o-transition: 0.2s ease;
-        transition: 0.2s ease; }
+        width: 100%; }
 
 .page-form {
   padding: 60px 0px; }
@@ -756,12 +734,6 @@ div.page-events {
     position: relative; }
     div.page-events a.event-item:hover div.event-title {
       color: #2474A4; }
-    div.page-events a.event-item:active {
-      -webkit-transform: scale(0.98);
-      -moz-transform: scale(0.98);
-      -ms-transform: scale(0.98);
-      -o-transform: scale(0.98);
-      transform: scale(0.98); }
     div.page-events a.event-item button.btn-event-reg {
       /* Rectangle: */
       background-image: linear-gradient(117deg, rgba(157, 185, 213, 0.98) 0%, #287BDE 100%);
@@ -1084,9 +1056,6 @@ div.page-blog div.blog-title {
 div.page-blog div.blog-body p {
   text-align: left;
   font-family: "Montserrat", sans-serif; }
-div.page-blog div.blog-body img {
-  width: 100%;
-  margin: 20px 0px; }
 
 div.blog-date {
   /* April 30th 2019 Copy 9: */
@@ -1096,33 +1065,10 @@ div.blog-date {
   letter-spacing: 0;
   text-align: center; }
 
-@media screen and (max-width: 1279px) {
-  header ul li a {
-    font-size: 13px;
-    font-weight: bold;
-    padding: 5px 10px; }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px; }
 
-  .block-free-website h2 {
-    font-size: 28px; }
-  .block-free-website a {
-    height: 280px; }
-
-  footer {
-    min-height: 380px; }
-
-  .featured-blog div.col-md-3 a div.blog-info {
-    top: 25%; }
-
-  div.about-mp h2, div.page-jesus h2 {
-    font-size: 41px; }
-
-  div.page-events a.event-item img {
-    width: 100%; }
-
-  div.page-events a.event-item div.flag {
-    position: relative;
-    width: 32px; } }
-@media screen and (max-width: 992px) {
   header {
     height: 60px;
     overflow: hidden; }
@@ -1164,13 +1110,6 @@ div.blog-date {
 
   header.expand {
     height: 500px;
-    overflow-y: scroll; } }
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 60px; }
-
-  header.expand {
-    height: 500px;
     overflow-y: scroll; }
 
   .home-block-event {
@@ -1207,4 +1146,4 @@ div.blog-date {
   div.page-events a.event-item img {
     width: 100%; } }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app.cs.map */

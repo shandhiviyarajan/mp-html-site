@@ -7,7 +7,6 @@ header {
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 
-
   div.mobile_menu {
     display: none;
   }
@@ -49,12 +48,17 @@ header {
         text-decoration: none;
         line-height: 100px;
 
-
         &:hover {
           color: #194964;
           text-decoration: none;
         }
 
+      }
+
+      &.active {
+        a {
+          background: $blue;
+        }
       }
     }
 

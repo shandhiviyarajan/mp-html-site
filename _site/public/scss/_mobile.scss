@@ -1,0 +1,163 @@
+@media screen and (max-width: 1279px) {
+
+  header {
+    ul li {
+      a {
+        font-size: 13px;
+        font-weight: bold;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .block-free-website {
+    h2 {
+      font-size: 28px;
+    }
+    a {
+      height: 280px;
+    }
+  }
+
+  footer {
+    min-height: 380px;
+  }
+
+  .featured-blog div.col-md-3 a div.blog-info {
+    top: 25%;
+  }
+  div.about-mp h2, div.page-jesus h2 {
+    font-size: 41px;
+  }
+
+  div.page-events a.event-item {
+    img {
+      width: 100%;
+    }
+  }
+
+  div.page-events a.event-item div.flag {
+    position: relative;
+    width: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  header {
+    div.mobile_menu {
+      z-index: 2000;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      width: 44px;
+      height: 44px;
+      font-size: 32px;
+      color: $blue;
+
+    }
+
+    height: 60px;
+    overflow: hidden;
+
+    div.logo {
+      img {
+        width: 60px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    div.top-header {
+      display: none;
+    }
+
+    ul {
+      float: none;
+      padding: 0px;
+
+      li:last-child {
+        display: block;
+      }
+    }
+
+    ul li {
+      display: block;
+      a {
+        height: auto;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px 20px;
+        line-height: 30px;
+        &:hover {
+          background: $blue;
+          color: #fff;
+        }
+      }
+    }
+  }
+  header.expand {
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
+  header.expand {
+    height: 500px;
+    overflow-y: scroll;
+  }
+  .home-block-event {
+    padding: 20px;
+  }
+  .home-block-event .next-date-wrapper .next-date-text {
+    margin: 0px 0px 0px 0px;
+    line-height: 36px;
+  }
+
+  .home-block-event .next-event-info .next-event-title {
+    color: #2474A4;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+
+    margin: 20px 0px 10px 0px;
+  }
+
+  .featured-video-block {
+    height: auto;
+  }
+
+  .block-free-website a {
+    width: auto;
+  }
+  div.block-connect, div.block-digital-training, div.block-connect-with-us {
+    height: auto;
+  }
+  div.block-connect .connect-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.page-events a.event-item {
+
+    div.event-date {
+      padding-left: 20px;
+      float: left;
+      display: flex;
+    }
+    img {
+      width: 100%;
+
+    }
+
+  }
+}

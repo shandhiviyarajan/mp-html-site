@@ -19,7 +19,6 @@ div.page-header {
       height: 720px;
     }
 
-
     div.overlay {
       position: absolute;
       width: 100%;
@@ -54,7 +53,6 @@ div.page-header {
       }
     }
   }
-
 
   div.overlay {
     position: absolute;
@@ -110,6 +108,7 @@ div.page-header {
   &.blog_bg {
     background: url('../images/blog_bg.jpg') center center no-repeat;
     background-size: cover;
+    margin-bottom: 0px;
   }
 
   &.about_bg {
@@ -123,7 +122,6 @@ div.page-header {
   }
 
 }
-
 
 img.page-full-image {
   width: 100%;
@@ -144,7 +142,6 @@ div.page-content {
     font-size: 18px;
     text-align: center;
   }
-
 
   .t-videos {
 
@@ -175,6 +172,14 @@ div.page-content {
         background: #fff;
       }
 
+      &:active {
+        -webkit-transform: scale(0.98);
+        -moz-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+        -o-transform: scale(0.98);
+        transform: scale(0.98);
+      }
+
       div.col-sm-6 {
 
         p {
@@ -197,7 +202,6 @@ div.page-content {
         text-decoration: none;
         margin: 20px 0px 0px 0px;
       }
-
 
     }
   }
@@ -253,7 +257,6 @@ div.page-content {
   padding: 60px 0px;
 }
 
-
 .featured-blog {
   position: relative;
 
@@ -271,7 +274,7 @@ div.page-content {
         z-index: 2000;
         width: 60%;
         height: 30%;
-        /* top: 25%; */
+        top: 60%;
         left: 20%;
         bottom: 0px;
         text-align: center;
@@ -279,9 +282,10 @@ div.page-content {
 
       h3 {
 
-        font-size: 18px;
+        font-size: 24px;
         color: #FFFFFF;
         text-align: center;
+        font-weight:bold;
       }
 
       div.blog-category {
@@ -296,19 +300,34 @@ div.page-content {
         font-size: 12px;
       }
 
+      &:hover {
+        figure img {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+
     }
 
     figure {
       display: block;
       margin: 0px;
+      overflow: hidden;
 
       img {
         width: 100%;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
       }
     }
   }
 }
-
 
 .page-form {
 
@@ -324,7 +343,6 @@ div.page-content {
   background: url('../images/form_bg.jpg') center center no-repeat;
   background-size: cover;
 }
-
 
 .digital_training_info {
   background: #00BAFF;
@@ -387,7 +405,6 @@ a.btn-start {
   font-weight: bold;
 }
 
-
 div.page-events {
   position: relative;
 
@@ -397,12 +414,19 @@ div.page-events {
     margin: 0px 0px 40px 0px;
     position: relative;
 
-
     &:hover {
 
       div.event-title {
         color: $blue;
       }
+    }
+
+    &:active {
+      -webkit-transform: scale(0.98);
+      -moz-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+      -o-transform: scale(0.98);
+      transform: scale(0.98);
     }
 
     button.btn-event-reg {
@@ -475,7 +499,6 @@ div.page-events {
 
 }
 
-
 div.partner-page {
 
   div.donation-btns {
@@ -544,7 +567,6 @@ div.partner-page {
   }
 }
 
-
 div.page-videos {
   position: relative;
 
@@ -553,7 +575,6 @@ div.page-videos {
     font-size: 24px;
     color: #3D4041;
     letter-spacing: 0;
-
 
   }
 
@@ -728,7 +749,6 @@ div.page-ministry {
     }
   }
 
-
 }
 
 div.page-confess {
@@ -745,7 +765,6 @@ div.page-header-content {
   padding: 100px 0px 0px 0px;
   position: relative;
   z-index: 3000;
-
 
   div.form-content {
     padding-top: 100px;
@@ -813,9 +832,7 @@ div.page-header-content {
     }
   }
 
-
 }
-
 
 .follow-us {
   text-align: center;
@@ -840,9 +857,7 @@ div.page-header-content {
     }
   }
 
-
 }
-
 
 .country-contact {
   background: #fff;
@@ -869,7 +884,7 @@ div.page-header-content {
 .page-build-church {
   h2 {
     font-size: 36px;
-    font-weight:bold;
+    font-weight: bold;
     color: #000;
     text-align: Center;
     margin: 15px 0px;
@@ -883,39 +898,44 @@ div.page-header-content {
   }
 }
 
-div.page-blog{
+div.page-blog {
 
-  div.blog-image{
-    figure{
-      img{
-        width:100%;
+  div.blog-image {
+    figure {
+      img {
+        width: 100%;
       }
     }
   }
-  div.blog-title{
-    background:#fff;
-    padding:40px;
+  div.blog-title {
+    background: #fff;
+    padding: 40px;
 
     position: relative;
-    margin:-100px 20px 0px 20px;
+    margin: -100px 20px 0px 20px;
 
-    h3{
-font-weight:bold;
+    h3 {
+      font-weight: bold;
       font-size: 32px;
       color: #000000;
       letter-spacing: 0;
     }
   }
-  div.blog-body{
-    p{
-      text-align:left;
-      font-family:$second-font;
+  div.blog-body {
+    p {
+      text-align: left;
+      font-family: $second-font;
+    }
+
+    img {
+      width: 100%;
+      margin: 20px 0px;
     }
   }
 }
 
-div.blog-date{/* April 30th 2019 Copy 9: */
-font-family:$second-font;
+div.blog-date { /* April 30th 2019 Copy 9: */
+  font-family: $second-font;
   font-size: 12px;
   color: #818181;
   letter-spacing: 0;
@@ -924,123 +944,6 @@ font-family:$second-font;
 }
 
 
-
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 60px;
-  }
-
-  header {
-
-    div.mobile_menu {
-      z-index: 2000;
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      right: 0px;
-      top: 5px;
-      width: 44px;
-      height: 44px;
-      font-size: 32px;
-      color: $blue;
-
-
-    }
-
-    height: 60px;
-    overflow: hidden;
-
-    div.logo {
-      img {
-        width: 60px;
-        margin: 0 auto;
-        display: block;
-      }
-    }
-
-    div.top-header {
-      display: none;
-    }
-
-    ul {
-      float: none;
-      padding: 0px;
-
-      li:last-child {
-        display: block;
-      }
-    }
-
-    ul li {
-      display: block;
-
-      a {
-        height: auto;
-        display: block;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 5px 20px;
-        line-height: 30px;
-
-        &:hover {
-          background: $blue;
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  header.expand {
-    height: 500px;
-    overflow-y: scroll;
-  }
-  .home-block-event{
-    padding:20px;
-  }
-  .home-block-event .next-date-wrapper .next-date-text {
-margin:0px 0px 0px 0px;
-    line-height: 36px;
-  }
-
-  .home-block-event .next-event-info .next-event-title {
-    color: #2474A4;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-
-    margin: 20px 0px 10px 0px;
-  }
-
-  .featured-video-block{
-    height:auto;
-  }
-
-  .block-free-website a{
-    width:auto;
-  }
-  div.block-connect, div.block-digital-training, div.block-connect-with-us{
-    height:auto;
-  }
-  div.block-connect .connect-buttons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  div.page-events a.event-item{
-
-    div.event-date{
-      padding-left:20px;
-      float:left;
-      display: flex;
-    }
-    img{
-      width:100%;
-
-    }
-
-  }
-}
 
 
 

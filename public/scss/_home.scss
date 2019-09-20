@@ -252,12 +252,41 @@ div.block-digital-training {
 
 div.block-connect-with-us {
   height: 360px;
-
   div.container {
-
     padding: 30px 0px;
-
+    h3 {
+      font-weight: bold;
+      text-align: center;
+    }
   }
+  .subscription-form {
+    width: 100%;
+
+    div.input-group {
+      justify-content: center;
+      input[type="email"] {
+        width: 240px;
+        padding: 0px 0px 0px 20px;
+        font-weight: bold;
+        outline: 0;
+        height: 44px;
+
+        &:focus {
+          outline: 0;
+        }
+
+      }
+      button {
+        font-weight: bold;
+        font-size: 14px;
+        height: 44px;
+        color: #fff;
+        background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
+        border: none;
+      }
+    }
+  }
+
   &.connect_withus_bg {
     background: url('../images/connect_withus.jpg') center center no-repeat;
     background-size: cover;
@@ -271,7 +300,6 @@ div.block-connect-with-us {
 
 .block-free-website {
   position: relative;
-
 
   h2 {
     small {
@@ -347,10 +375,9 @@ div.block-connect-with-us {
     width: 100%;
     height: 64px;
     border: none;
-      font-size:18px;
-      line-height:40px;
-      padding-top:10px;
-
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 10px;
 
   }
 }
@@ -419,7 +446,7 @@ div.block-connect {
         letter-spacing: 0;
         text-align: center;
         line-height: 22px;
-        font-weight:600;
+        font-weight: 600;
         text-decoration: none;
       }
     }
@@ -449,10 +476,6 @@ div.block-connect {
       }
     }
   }
-}
-
-.block-connect-with-us {
-
 }
 
 footer {
@@ -515,13 +538,12 @@ footer {
 }
 
 div.about-mp,
-div.page-jesus{
+div.page-jesus {
 
-
-  iframe{
-    width:100%;
-    display:block;
-    margin:20px 0px;
+  iframe {
+    width: 100%;
+    display: block;
+    margin: 20px 0px;
   }
   div.ministry-links {
     ul {
@@ -540,7 +562,7 @@ div.page-jesus{
       }
     }
   }
-  h2 {
+  block-connect-with-usblock-connect-with-us h2 {
     text-align: center;
     color: #000;
     font-size: 48px;
@@ -570,19 +592,19 @@ div.page-jesus{
   }
 }
 
-div.partner-with-us{
-  padding:40px 0px;
+div.partner-with-us {
+  padding: 40px 0px;
 
-  h2{
-    font-weight:bold;
-    font-size:48px;
-    color:#000;
-    text-align:Center;
+  h2 {
+    font-weight: bold;
+    font-size: 48px;
+    color: #000;
+    text-align: Center;
   }
 
-  a.btn{
-   svg{
-  display:inline-block;
-   }
+  a.btn {
+    svg {
+      display: inline-block;
+    }
   }
 }

@@ -241,6 +241,28 @@ div.block-connect-with-us {
   height: 360px; }
   div.block-connect-with-us div.container {
     padding: 30px 0px; }
+    div.block-connect-with-us div.container h3 {
+      font-weight: bold;
+      text-align: center; }
+  div.block-connect-with-us .subscription-form {
+    width: 100%; }
+    div.block-connect-with-us .subscription-form div.input-group {
+      justify-content: center; }
+      div.block-connect-with-us .subscription-form div.input-group input[type="email"] {
+        width: 240px;
+        padding: 0px 0px 0px 20px;
+        font-weight: bold;
+        outline: 0;
+        height: 44px; }
+        div.block-connect-with-us .subscription-form div.input-group input[type="email"]:focus {
+          outline: 0; }
+      div.block-connect-with-us .subscription-form div.input-group button {
+        font-weight: bold;
+        font-size: 14px;
+        height: 44px;
+        color: #fff;
+        background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
+        border: none; }
   div.block-connect-with-us.connect_withus_bg {
     background: url("../images/connect_withus.jpg") center center no-repeat;
     background-size: cover; }
@@ -445,8 +467,8 @@ div.page-jesus div.ministry-links ul {
       display: block;
       padding: 7px 20px;
       font-size: 14px; }
-div.about-mp h2,
-div.page-jesus h2 {
+div.about-mp block-connect-with-usblock-connect-with-us h2,
+div.page-jesus block-connect-with-usblock-connect-with-us h2 {
   text-align: center;
   color: #000;
   font-size: 48px;
@@ -1108,7 +1130,14 @@ div.blog-date {
     height: 280px; }
 
   footer {
-    min-height: 380px; }
+    min-height: 380px;
+    height: auto; }
+    footer ul {
+      margin: 0px 0px 20px 0px; }
+    footer ul li {
+      font-weight: 700; }
+      footer ul li a {
+        font-weight: normal; }
 
   .featured-blog div.col-md-3 a div.blog-info {
     top: 25%; }
@@ -1122,7 +1151,35 @@ div.blog-date {
   div.page-events a.event-item div.flag {
     position: relative;
     width: 32px; } }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
+  body {
+    padding-top: 60px; }
+
+  .block-connect.connect_bg {
+    height: auto;
+    background-position: right center; }
+    .block-connect.connect_bg div.container {
+      max-width: 100%; }
+    .block-connect.connect_bg .connect-buttons {
+      flex-wrap: wrap; }
+      .block-connect.connect_bg .connect-buttons > div {
+        margin: 0px 20px 20px 20px; }
+
+  .home-block-one div.slider-text {
+    font-size: 36px; }
+
+  .block-free-website h2, .block-free-website p {
+    text-align: center; }
+  .block-free-website div.col-md-4,
+  .block-free-website div.col-md-8 {
+    flex: 0 0 100.100%;
+    max-width: 100.100%; }
+  .block-free-website a {
+    width: 100%; }
+  .block-free-website div.container {
+    width: 100%;
+    max-width: 100%; }
+
   header {
     height: 60px;
     overflow: hidden; }
@@ -1137,6 +1194,9 @@ div.blog-date {
       height: 44px;
       font-size: 32px;
       color: #2474A4; }
+    header .logo-wrapper {
+      flex: 0 0 100.000%;
+      max-width: 100.000%; }
     header div.logo img {
       width: 60px;
       margin: 0 auto;
@@ -1168,6 +1228,14 @@ div.blog-date {
 @media screen and (max-width: 767px) {
   body {
     padding-top: 60px; }
+
+  footer {
+    padding: 20px 0px; }
+
+  .home-block-one {
+    height: 480px; }
+    .home-block-one div.slider-item {
+      height: 480px; }
 
   header.expand {
     height: 500px;
@@ -1205,6 +1273,64 @@ div.blog-date {
     float: left;
     display: flex; }
   div.page-events a.event-item img {
-    width: 100%; } }
+    width: 100%; }
+
+  .home-block-one div.slider-text {
+    padding: 0px 20px;
+    font-size: 36px; }
+
+  .home-block-event .next-date-wrapper {
+    justify-content: center; }
+
+  .home-block-event .next-event-info .next-event-title,
+  .home-block-event .next-event-info .next-event-time {
+    text-align: center; }
+
+  .home-block-event .next-date-wrapper .next-date {
+    padding: 15px;
+    margin: 0px 20px 10px 0px; }
+
+  .home-block-event .next-event-info .next-event-country img {
+    display: block;
+    margin: 0 auto; }
+
+  .featured-video-block div.block-title {
+    text-align: center; }
+
+  .featured-video-block {
+    padding: 15px 0px; }
+    .featured-video-block div.block-title {
+      margin: 0px 0px 15px 0px; }
+    .featured-video-block .video-block video {
+      height: auto; }
+
+  div.block-connect.connect_bg {
+    padding-bottom: 20px; }
+
+  div.block-connect div.container {
+    padding-top: 20px; }
+
+  div.block-connect .connect-buttons {
+    margin: 20px 0px 0px 0px; }
+
+  div.block-connect .connect-buttons > div a svg {
+    margin: 5px auto;
+    height: 44px; }
+
+  div.block-connect .connect-buttons > div {
+    margin: 10px 20px;
+    width: 100%;
+    padding: 10px;
+    height: auto; }
+
+  .block-free-website a {
+    height: auto; }
+  .block-free-website h2 {
+    text-align: Center;
+    font-size: 32px; }
+  .block-free-website p {
+    text-align: center; }
+  .block-free-website div.col-4 {
+    padding: 0px 5px; } }
 
 /*# sourceMappingURL=app.css.map */

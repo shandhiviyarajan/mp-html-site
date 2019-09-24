@@ -264,8 +264,11 @@ div.block-connect-with-us {
       font-weight: bold;
       text-align: center;
       margin: 0px 0px 20px 0px;
+      font-size: 20px;
     }
   }
+
+
   .subscription-form {
     width: 100%;
 
@@ -276,7 +279,7 @@ div.block-connect-with-us {
         padding: 0px 0px 0px 20px;
         font-weight: normal;
         outline: 0;
-        height: 48px;
+        height: 56px;
 
         &:focus {
           outline: 0;
@@ -290,13 +293,15 @@ div.block-connect-with-us {
       button {
         font-weight: bold;
         font-size: 14px;
-        height: 48px;
+        height: 56px;
         color: #fff;
         background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
         border: none;
-        width:100%;
+        width: 100%;
       }
     }
+
+
   }
 
   &.connect_withus_bg {
@@ -307,6 +312,13 @@ div.block-connect-with-us {
   div.overlay {
 
     background: rgba(255, 255, 255, .9);
+  }
+
+  form {
+    p {
+      margin: 20px 0px;
+      text-align: center;
+    }
   }
 }
 

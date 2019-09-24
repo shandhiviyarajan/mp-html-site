@@ -257,7 +257,8 @@ div.block-connect-with-us {
     div.block-connect-with-us div.container h3 {
       font-weight: bold;
       text-align: center;
-      margin: 0px 0px 20px 0px; }
+      margin: 0px 0px 20px 0px;
+      font-size: 20px; }
   div.block-connect-with-us .subscription-form {
     width: 100%; }
     div.block-connect-with-us .subscription-form div.input-group {
@@ -267,7 +268,7 @@ div.block-connect-with-us {
         padding: 0px 0px 0px 20px;
         font-weight: normal;
         outline: 0;
-        height: 48px; }
+        height: 56px; }
         div.block-connect-with-us .subscription-form div.input-group input[type="email"]:focus {
           outline: 0; }
       div.block-connect-with-us .subscription-form div.input-group div.input-group-append {
@@ -275,7 +276,7 @@ div.block-connect-with-us {
       div.block-connect-with-us .subscription-form div.input-group button {
         font-weight: bold;
         font-size: 14px;
-        height: 48px;
+        height: 56px;
         color: #fff;
         background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
         border: none;
@@ -285,6 +286,9 @@ div.block-connect-with-us {
     background-size: cover; }
   div.block-connect-with-us div.overlay {
     background: rgba(255, 255, 255, 0.9); }
+  div.block-connect-with-us form p {
+    margin: 20px 0px;
+    text-align: center; }
 
 .block-free-website {
   position: relative; }

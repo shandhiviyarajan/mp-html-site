@@ -1,11 +1,13 @@
 @media screen and (max-width: 1279px) {
-
+  .home-block-one{
+    height:565px;
+  }
   header {
     ul li {
       a {
         font-size: 13px;
-        font-weight: bold;
-        padding: 5px 10px;
+        /* font-weight: bold; */
+        padding: 5px 7px;
       }
     }
   }
@@ -14,6 +16,7 @@
     h2 {
       font-size: 28px;
     }
+
     a {
       height: 280px;
     }
@@ -26,8 +29,10 @@
     ul {
       margin: 0px 0px 20px 0px;
     }
+
     ul li {
       font-weight: 700;
+
       a {
         font-weight: normal;
       }
@@ -61,12 +66,14 @@
   .block-connect.connect_bg {
     height: auto;
     background-position: right center;
+
     div.container {
       max-width: 100%;
     }
 
     .connect-buttons {
       flex-wrap: wrap;
+
       > div {
         margin: 0px 20px 20px 20px;
       }
@@ -81,15 +88,18 @@
     h2, p {
       text-align: center;
     }
+
     div.col-md-4,
     div.col-md-8 {
       flex: 0 0 100.100%;
       max-width: 100.100%;
     }
+
     a {
       width: 100%;
 
     }
+
     div.container {
       width: 100%;
       max-width: 100%;
@@ -106,17 +116,26 @@
 
   header {
     position: fixed;
+
     div.mobile_menu {
       z-index: 2000;
       cursor: pointer;
       display: block;
       position: absolute;
-      right: 0px;
+      right: 10px;
       top: 5px;
       width: 44px;
       height: 44px;
-      font-size: 32px;
+      font-size: 24px;
+
+      border: thin solid #d9d9d9;
+      text-align: center;
+      padding-top: 4px;
       color: $blue;
+
+      &:hover {
+        background: #f1f1f1;
+      }
 
     }
 
@@ -134,6 +153,8 @@
         margin: 0 auto;
         display: block;
       }
+
+
     }
 
     div.top-header {
@@ -151,6 +172,7 @@
 
     ul li {
       display: block;
+
       a {
         height: auto;
         display: block;
@@ -159,6 +181,7 @@
         text-decoration: none;
         padding: 5px 20px;
         line-height: 30px;
+
         &:hover {
           background: $blue;
           color: #fff;
@@ -188,7 +211,28 @@
   body {
     padding-top: 60px;
   }
+  header {
+    div.logo {
 
+      height:60px;
+      overflow: hidden;
+      a{
+display:flex;
+
+        span{
+          padding-top: 16px;
+          display: block;
+          color:$blue;
+          font-weight: bold;
+        }
+      }
+      img {
+        width: 78px;
+        margin: 0px 1px;
+
+      }
+    }
+  }
   footer {
     padding: 20px 0px;
   }
@@ -201,6 +245,7 @@
   }
   .home-block-one {
     height: 480px;
+
     div.slider-item {
       height: 480px;
     }
@@ -248,6 +293,7 @@
       float: left;
       display: flex;
     }
+
     img {
       width: 100%;
 
@@ -283,6 +329,7 @@
   }
   .featured-video-block {
     padding: 15px 0px;
+
     div.block-title {
       margin: 0px 0px 15px 0px;
     }
@@ -330,13 +377,16 @@
       padding-top: 20px;
       margin-top: 20px;
       font-size: 16px;
+
       span {
         display: none;
       }
     }
+
     h2 {
       text-align: Center;
     }
+
     p {
       text-align: center;
 
@@ -354,18 +404,20 @@
 
     div.page-title {
       height: 200px;
+
       h2 {
         font-size: 28px;
         margin: 10px 0px;
       }
+
       span {
         font-size: 12px;
       }
     }
   }
 
-  div.page-ministry img{
-    width:100%;
+  div.page-ministry img {
+    width: 100%;
   }
   div.page-ministry div.d-training a.btn {
     margin: 0px -1px;
@@ -375,22 +427,38 @@
     line-height: 37px;
   }
   div.page-ministry div.d-training {
-    h2,h4,p{
-      text-align:Center;
+    h2, h4, p {
+      text-align: Center;
     }
 
-    h2{
-      font-size:28px;
+    h2 {
+      font-size: 28px;
     }
+  }
+  div.partner-page a.btn.btn-become-partner {
+    margin-bottom: 40px;
   }
   footer ul {
 
     border-bottom: thin solid #153c53;
     margin: 20px -20px 20px -20px;
     padding: 0px 20px 20px 20px;
+
     li {
       text-align: center;
     }
+  }
+  div.page-header-content {
+    padding-top: 20px;
+  }
+  div.page-header-content button.btn-donate {
+    margin-bottom: 30px;
+  }
+  div.page-header-content div.form-content {
+    padding-top: 0px;
+  }
+  div.page-header.donate_bg {
+    height: auto;
   }
 
 }

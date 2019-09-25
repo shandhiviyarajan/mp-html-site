@@ -16,6 +16,8 @@ header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   header div.mobile_menu {
     display: none; }
+  header div.logo a span {
+    display: none; }
   header div.top-header {
     position: relative;
     background: #2474A4;
@@ -1093,9 +1095,9 @@ div.page-header-content {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    font-size: 36px; }
+    font-size: 32px; }
   div.page-header-content p {
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
     text-align: center; }
   div.page-header-content svg {
@@ -1107,7 +1109,7 @@ div.page-header-content {
     background: #fff;
     border: none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     margin: 0px 0px 40px 0px;
     border-radius: 4px; }
@@ -1121,7 +1123,7 @@ div.page-header-content {
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
-    font-size: 24px; }
+    font-size: 20px; }
   div.page-header-content button.btn-amount {
     border-radius: 4px;
     width: 100%;
@@ -1207,10 +1209,13 @@ div.blog-date {
   text-align: center; }
 
 @media screen and (max-width: 1279px) {
+  .home-block-one {
+    height: 565px; }
+
   header ul li a {
     font-size: 13px;
-    font-weight: bold;
-    padding: 5px 10px; }
+    /* font-weight: bold; */
+    padding: 5px 7px; }
 
   .block-free-website h2 {
     font-size: 28px; }
@@ -1284,12 +1289,17 @@ div.blog-date {
       cursor: pointer;
       display: block;
       position: absolute;
-      right: 0px;
+      right: 10px;
       top: 5px;
       width: 44px;
       height: 44px;
-      font-size: 32px;
+      font-size: 24px;
+      border: thin solid #d9d9d9;
+      text-align: center;
+      padding-top: 4px;
       color: #2474A4; }
+      header div.mobile_menu:hover {
+        background: #f1f1f1; }
     header .logo-wrapper {
       flex: 0 0 100.000%;
       max-width: 100.000%; }
@@ -1332,6 +1342,20 @@ div.blog-date {
 @media screen and (max-width: 767px) {
   body {
     padding-top: 60px; }
+
+  header div.logo {
+    height: 60px;
+    overflow: hidden; }
+    header div.logo a {
+      display: flex; }
+      header div.logo a span {
+        padding-top: 16px;
+        display: block;
+        color: #2474A4;
+        font-weight: bold; }
+    header div.logo img {
+      width: 78px;
+      margin: 0px 1px; }
 
   footer {
     padding: 20px 0px; }
@@ -1485,11 +1509,26 @@ div.blog-date {
   div.page-ministry div.d-training h2 {
     font-size: 28px; }
 
+  div.partner-page a.btn.btn-become-partner {
+    margin-bottom: 40px; }
+
   footer ul {
     border-bottom: thin solid #153c53;
     margin: 20px -20px 20px -20px;
     padding: 0px 20px 20px 20px; }
     footer ul li {
-      text-align: center; } }
+      text-align: center; }
+
+  div.page-header-content {
+    padding-top: 20px; }
+
+  div.page-header-content button.btn-donate {
+    margin-bottom: 30px; }
+
+  div.page-header-content div.form-content {
+    padding-top: 0px; }
+
+  div.page-header.donate_bg {
+    height: auto; } }
 
 /*# sourceMappingURL=app.css.map */

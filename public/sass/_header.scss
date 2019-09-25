@@ -11,6 +11,15 @@ header {
     display: none;
   }
 
+
+  div.logo {
+    a {
+      span {
+        display: none;
+      }
+    }
+  }
+
   div.top-header {
     position: relative;
     background: $blue;
@@ -18,12 +27,13 @@ header {
 
     div.dropdown {
       display: inline-block;
-      margin:0px 10px 0px 0px;
+      margin: 0px 10px 0px 0px;
 
       a {
         padding: 10px 10px;
       }
     }
+
     a {
       display: inline-block;
       padding: 10px 10px;

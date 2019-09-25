@@ -40,7 +40,7 @@ div.page-header {
     z-index: 3000;
 
     h2 {
-      font-size: 48px;
+      font-size: 36px;
       font-weight: bold;
       color: #fff;
       text-align: Center;
@@ -219,8 +219,8 @@ div.page-content {
       color: #494949;
       text-decoration: none;
       display: block;
-      padding: 20px 60px;
-      font-size: 20px;
+      padding: 20px 20px;
+      font-size: 16px;
       font-weight: 600;
       text-align: Center;
       /* Rectangle: */
@@ -285,7 +285,7 @@ div.page-content {
         font-size: 24px;
         color: #FFFFFF;
         text-align: center;
-        font-weight:bold;
+        font-weight: bold;
       }
 
       div.blog-category {
@@ -396,15 +396,29 @@ a.btn-start {
   background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
   color: #fff;
   width: 100%;
-  height: 64px;
+  height: 48px;
   border: none;
   max-width: 320px;
   margin: 20px auto;
   display: block;
-  line-height: 48px;
+  line-height: 37px;
   font-weight: bold;
 }
 
+div.about-mp{
+  h2{
+    font-weight:700;
+    font-size:32px;
+    text-align:center;
+  }
+}
+div.page-jesus{
+  h2{
+    font-size:32px;
+    text-align:center;
+    font-weight:700;
+  }
+}
 div.page-events {
   position: relative;
 
@@ -461,7 +475,7 @@ div.page-events {
     }
 
     div.event-date {
-      width: 65px;
+      width: 48px;
       text-align: right;
       float: right;
 
@@ -472,7 +486,7 @@ div.page-events {
       text-decoration: none;
 
       span.date {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
         color: $red;
       }
@@ -480,7 +494,7 @@ div.page-events {
       span.month,
       span.year {
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 15px;
         color: $red;
       }
 
@@ -497,6 +511,50 @@ div.page-events {
 
   }
 
+}
+
+div.page-event-single {
+
+  div.event-date {
+    width: 65px;
+    text-align: right;
+    float: left;
+
+    span {
+      display: block;
+    }
+
+    text-decoration: none;
+
+    span.date {
+      font-size: 24px;
+      font-weight: bold;
+      color: $red;
+    }
+
+    span.month,
+    span.year {
+      text-transform: uppercase;
+      font-size: 15px;
+      color: $red;
+    }
+
+    span.year {
+
+    }
+  }
+
+  div.event-time {
+    color: $blue;
+    font-size: 14px;
+    text-decoration: none;
+  }
+p{
+  text-align:left;
+}
+  div.event-body {
+    text-align: left;
+  }
 }
 
 div.partner-page {
@@ -907,6 +965,7 @@ div.page-blog {
       }
     }
   }
+
   div.blog-title {
     background: #fff;
     padding: 40px;
@@ -921,6 +980,7 @@ div.page-blog {
       letter-spacing: 0;
     }
   }
+
   div.blog-body {
     p {
       text-align: left;

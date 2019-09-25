@@ -364,6 +364,25 @@
     }
   }
 
+  div.page-ministry img{
+    width:100%;
+  }
+  div.page-ministry div.d-training a.btn {
+    margin: 0px -1px;
+    float: none;
+    margin: 20px auto;
+    height: 48px;
+    line-height: 37px;
+  }
+  div.page-ministry div.d-training {
+    h2,h4,p{
+      text-align:Center;
+    }
+
+    h2{
+      font-size:28px;
+    }
+  }
   footer ul {
 
     border-bottom: thin solid #153c53;

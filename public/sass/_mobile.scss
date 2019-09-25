@@ -211,6 +211,11 @@
   body {
     padding-top: 60px;
   }
+
+
+  div.page-events a.event-item div.event-date span.month, div.page-events a.event-item div.event-date span.year{
+    padding:7px 5px;
+  }
   header {
     div.logo {
 
@@ -285,8 +290,13 @@ display:flex;
     display: flex;
     flex-wrap: wrap;
   }
-
+  .testimony-tabs{
+    margin-bottom:20px;
+  }
   div.page-events a.event-item {
+    border-bottom:thin solid #d8d8d8;
+    padding-bottom:20px;
+    margin-bottom:20px;
 
     div.event-date {
       padding-left: 20px;
@@ -296,6 +306,7 @@ display:flex;
 
     img {
       width: 100%;
+      margin:0px 0px 20px 0px;
 
     }
 

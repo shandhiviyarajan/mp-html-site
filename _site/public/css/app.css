@@ -1343,6 +1343,9 @@ div.blog-date {
   body {
     padding-top: 60px; }
 
+  div.page-events a.event-item div.event-date span.month, div.page-events a.event-item div.event-date span.year {
+    padding: 7px 5px; }
+
   header div.logo {
     height: 60px;
     overflow: hidden; }
@@ -1403,12 +1406,20 @@ div.blog-date {
     display: flex;
     flex-wrap: wrap; }
 
-  div.page-events a.event-item div.event-date {
-    padding-left: 20px;
-    float: left;
-    display: flex; }
-  div.page-events a.event-item img {
-    width: 100%; }
+  .testimony-tabs {
+    margin-bottom: 20px; }
+
+  div.page-events a.event-item {
+    border-bottom: thin solid #d8d8d8;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+    div.page-events a.event-item div.event-date {
+      padding-left: 20px;
+      float: left;
+      display: flex; }
+    div.page-events a.event-item img {
+      width: 100%;
+      margin: 0px 0px 20px 0px; }
 
   .home-block-one div.slider-text {
     padding: 0px 20px;

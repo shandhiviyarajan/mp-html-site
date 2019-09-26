@@ -11,11 +11,16 @@ header {
     display: none;
   }
 
-
   div.logo {
-    a {
+    a {  text-decoration: none !important;
       span {
         display: none;
+        text-decoration: none !important;
+        text-transform: uppercase;
+      }
+
+      &:hover span {
+        text-decoration: none !important;
       }
     }
   }
@@ -38,11 +43,12 @@ header {
       display: inline-block;
       padding: 10px 10px;
       color: #fff;
-      text-decoration: none;
+      text-decoration: none !important;
       font-size: 14px;
 
+
       &:hover {
-        color: #d6d6d6;
+        color: #d6d6d6;  text-decoration: none !important;
       }
     }
   }
@@ -59,18 +65,18 @@ header {
       a {
         height: 100px;
         display: block;
-        padding: 0px 13px;
+        padding: 0px 12px;
         font-weight: 500;
         font-size: 14px;
         color: #272727;
         letter-spacing: 0;
-        text-decoration: none;
+        border-bottom: 5px solid #fff;
         line-height: 100px;
         transition: 0.2s ease;
-
+        text-decoration: none !important;
         &:hover {
           color: #999;
-          text-decoration: none;
+ text-decoration: none !important;        border-bottom: 5px solid #d8d8d8;
         }
 
       }
@@ -83,7 +89,6 @@ header {
         }
       }
     }
-
 
   }
 }

@@ -16,8 +16,14 @@ header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   header div.mobile_menu {
     display: none; }
-  header div.logo a span {
-    display: none; }
+  header div.logo a {
+    text-decoration: none !important; }
+    header div.logo a span {
+      display: none;
+      text-decoration: none !important;
+      text-transform: uppercase; }
+    header div.logo a:hover span {
+      text-decoration: none !important; }
   header div.top-header {
     position: relative;
     background: #2474A4;
@@ -31,10 +37,11 @@ header {
       display: inline-block;
       padding: 10px 10px;
       color: #fff;
-      text-decoration: none;
+      text-decoration: none !important;
       font-size: 14px; }
       header div.top-header a:hover {
-        color: #d6d6d6; }
+        color: #d6d6d6;
+        text-decoration: none !important; }
   header ul {
     margin: 0px;
     float: right;
@@ -45,17 +52,19 @@ header {
       header ul li a {
         height: 100px;
         display: block;
-        padding: 0px 13px;
+        padding: 0px 12px;
         font-weight: 500;
         font-size: 14px;
         color: #272727;
         letter-spacing: 0;
-        text-decoration: none;
+        border-bottom: 5px solid #fff;
         line-height: 100px;
-        transition: 0.2s ease; }
+        transition: 0.2s ease;
+        text-decoration: none !important; }
         header ul li a:hover {
           color: #999;
-          text-decoration: none; }
+          text-decoration: none !important;
+          border-bottom: 5px solid #d8d8d8; }
       header ul li.active a {
         background: #fff;
         color: #2474A4;
@@ -95,7 +104,8 @@ footer {
     padding: 20px 0px; }
     footer div.copyright p {
       text-align: center;
-      font-size: 12px; }
+      font-size: 12px;
+      margin: 0px; }
   footer div.social-media-icons {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -150,11 +160,13 @@ footer {
     font-weight: 700;
     position: relative;
     text-align: Center;
+    text-transform: uppercase;
     height: 200px;
     width: 100%;
     font-size: 48px;
     z-index: 200;
     color: #FFFFFF;
+    max-width: 800px;
     line-height: 56px;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
@@ -321,7 +333,7 @@ div.block-digital-training {
 div.block-connect-with-us {
   height: 360px; }
   div.block-connect-with-us div.container {
-    padding: 30px 0px; }
+    padding: 30px 15px; }
     div.block-connect-with-us div.container svg {
       width: 160px;
       display: block;
@@ -406,7 +418,8 @@ div.block-connect-with-us {
     -o-transition: 0.2s ease;
     transition: 0.2s ease; }
     .block-free-website a svg {
-      margin: 10px 0px; }
+      margin: 10px 0px;
+      width: 32px; }
     .block-free-website a:hover {
       -webkit-transform: scale(1.05);
       -moz-transform: scale(1.05);
@@ -427,10 +440,12 @@ div.block-connect-with-us {
     height: 52px;
     border: none;
     font-size: 16px;
-    line-height: 33px;
-    padding-top: 10px;
+    line-height: 50px;
+    padding: 0px;
     margin: 0px;
-    max-width: 100%; }
+    max-width: 320px;
+    float: right;
+    font-weight: bold; }
 
 div.block-connect h2 {
   text-align: center;
@@ -476,7 +491,7 @@ div.block-connect .connect-buttons {
       transform: scale(1.05); }
     div.block-connect .connect-buttons > div a {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       color: #246E9E;
       letter-spacing: 0;
       text-align: center;
@@ -484,7 +499,8 @@ div.block-connect .connect-buttons {
       font-weight: 600;
       text-decoration: none; }
       div.block-connect .connect-buttons > div a svg {
-        margin: 10px auto; }
+        margin: 10px auto;
+        width: 40px; }
   div.block-connect .connect-buttons .btn_2 {
     background: #EB8F24; }
     div.block-connect .connect-buttons .btn_2 a {
@@ -552,11 +568,13 @@ div.partner-with-us {
   padding: 40px 0px; }
   div.partner-with-us h2 {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 32px;
     color: #000;
     text-align: Center; }
-  div.partner-with-us a.btn svg {
-    display: inline-block; }
+  div.partner-with-us a.btn {
+    font-size: 16px; }
+    div.partner-with-us a.btn svg {
+      display: inline-block; }
 
 div.page-header {
   height: 290px;
@@ -589,12 +607,14 @@ div.page-header {
       font-size: 36px;
       font-weight: bold;
       color: #fff;
-      text-align: Center; }
+      text-align: Center;
+      margin: 0px 0px 10px 0px; }
       div.page-header div.page-title h2 span {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
-        text-align: Center; }
+        text-align: Center;
+        line-height: 1.5em; }
   div.page-header div.overlay {
     position: absolute;
     width: 100%;
@@ -634,8 +654,11 @@ div.page-header {
   div.page-header.about_bg {
     background: url("../images/about_bg.jpg") center center no-repeat;
     background-size: cover; }
-  div.page-header.digital_trining_bg {
+  div.page-header.digital_training_bg {
     background: url("../images/dt.jpg") center center no-repeat;
+    background-size: cover; }
+  div.page-header.inquiry_bg {
+    background: url("../images/inq.jpg") center center no-repeat;
     background-size: cover; }
 
 img.page-full-image {
@@ -893,9 +916,10 @@ div.page-events {
       text-decoration: none; }
 
 div.page-event-single div.event-date {
-  width: 65px;
   text-align: right;
   float: left;
+  margin: 0px 20px 0px 0px;
+  line-height: 1.2em;
   text-decoration: none; }
   div.page-event-single div.event-date span {
     display: block; }
@@ -908,6 +932,18 @@ div.page-event-single div.event-date {
     text-transform: uppercase;
     font-size: 15px;
     color: #D73030; }
+div.page-event-single div.flag {
+  position: absolute;
+  right: 15px;
+  top: 0px; }
+div.page-event-single div.event-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  padding-right: 40px;
+  margin: 0px 0px 20px 0px; }
+div.page-event-single figure img {
+  width: 100%; }
 div.page-event-single div.event-time {
   color: #2474A4;
   font-size: 14px;
@@ -916,6 +952,70 @@ div.page-event-single p {
   text-align: left; }
 div.page-event-single div.event-body {
   text-align: left; }
+  div.page-event-single div.event-body p {
+    font-size: 16px; }
+div.page-event-single a.add-to-cal {
+  border: thin solid #d9d9d9;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #686868;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #fff; }
+  div.page-event-single a.add-to-cal img {
+    width: 20px;
+    margin: 0px 10px 0px 0px; }
+  div.page-event-single a.add-to-cal:hover {
+    background: #f1f1f1; }
+  div.page-event-single a.add-to-cal:active {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98); }
+div.page-event-single .upcoming-events {
+  background: #f1f1f1;
+  padding: 40px 0px 0px 0px;
+  margin-top: 40px; }
+  div.page-event-single .upcoming-events h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 0px 40px 0px;
+    text-align: center; }
+  div.page-event-single .upcoming-events a.event-item {
+    text-decoration: none; }
+    div.page-event-single .upcoming-events a.event-item div.flag {
+      position: relative;
+      right: auto;
+      margin-left: 45px;
+      margin-bottom: 20px; }
+    div.page-event-single .upcoming-events a.event-item:hover {
+      text-decoration: none; }
+      div.page-event-single .upcoming-events a.event-item:hover div.event-title {
+        text-decoration: none;
+        color: #686868; }
+    div.page-event-single .upcoming-events a.event-item div.event-title {
+      padding: 20px 0px 0px 50px;
+      margin: 0px 0px 10px 0px; }
+    div.page-event-single .upcoming-events a.event-item div.event-time {
+      padding: 0px 0px 10px 50px; }
+div.page-event-single .event-more-info ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex; }
+  div.page-event-single .event-more-info ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px 0px 0px; }
+    div.page-event-single .event-more-info ul li a {
+      display: block; }
+    div.page-event-single .event-more-info ul li p {
+      display: block;
+      margin: 0px;
+      font-size: 14px; }
+      div.page-event-single .event-more-info ul li p strong {
+        display: block; }
 
 div.partner-page div.donation-btns {
   text-align: center;
@@ -1027,33 +1127,37 @@ div.page-videos {
       color: #818181;
       font-weight: normal; }
 
-div.page-ministry div.d-training h4 {
-  /* Empower Ministries: */
-  font-size: 18px;
-  color: #9A9A9A;
-  letter-spacing: 0;
-  text-align: right;
-  margin: 7px 0px; }
-div.page-ministry div.d-training h2 {
-  /* FREE WEBSITE FOR EVE: */
-  font-family: Avenir-Black;
-  font-size: 36px;
-  color: #000000;
-  letter-spacing: 0;
-  text-align: right;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
-div.page-ministry div.d-training a.btn {
-  margin: 0px -1px;
-  float: right; }
-div.page-ministry div.d-training p {
-  /* Easy and simple thre: */
-  font-family: Avenir-Medium;
-  font-size: 18px;
-  color: #000000;
-  margin: 7px 0px;
-  letter-spacing: 0;
-  text-align: right; }
-div.page-ministry div.create-website div.col-md-4 a {
+div.page-ministry div.digital-training-block {
+  margin: 0px 0px 40px 0px; }
+  div.page-ministry div.digital-training-block h4 {
+    /* Empower Ministries: */
+    font-size: 18px;
+    color: #9A9A9A;
+    letter-spacing: 0;
+    text-align: right;
+    margin: 7px 0px; }
+  div.page-ministry div.digital-training-block h2 {
+    /* FREE WEBSITE FOR EVE: */
+    font-family: Avenir-Black;
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: right;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+  div.page-ministry div.digital-training-block a.btn {
+    margin: 0px -1px;
+    float: right; }
+  div.page-ministry div.digital-training-block p {
+    /* Easy and simple thre: */
+    font-family: Avenir-Medium;
+    font-size: 18px;
+    color: #000000;
+    margin: 7px 0px;
+    letter-spacing: 0;
+    text-align: right; }
+  div.page-ministry div.digital-training-block img {
+    width: 100%; }
+div.page-ministry div.create-website div.col-4 a {
   /* Rectangle Copy 9: */
   background-image: linear-gradient(-151deg, #0EACD1 0%, #0674A5 94%);
   border-radius: 4px;
@@ -1071,14 +1175,14 @@ div.page-ministry div.create-website div.col-md-4 a {
   font-size: 18px;
   font-weight: bold;
   color: #fff; }
-  div.page-ministry div.create-website div.col-md-4 a svg {
+  div.page-ministry div.create-website div.col-4 a svg {
     display: block;
     margin: 10px auto; }
-  div.page-ministry div.create-website div.col-md-4 a p {
+  div.page-ministry div.create-website div.col-4 a p {
     margin: 7px 0px;
     font-size: 12px;
     text-align: Center; }
-  div.page-ministry div.create-website div.col-md-4 a:hover {
+  div.page-ministry div.create-website div.col-4 a:hover {
     transform: scale(1.05); }
 
 div.page-confess p span {
@@ -1130,10 +1234,11 @@ div.page-header-content {
     /* 20: */
     font-size: 24px;
     color: #000000;
+    background: #fff;
     letter-spacing: 0;
     text-align: center;
     font-weight: bold;
-    margin: 0px 0px 40px 0px; }
+    margin: 0px 0px 20px 0px; }
     div.page-header-content button.btn-amount:hover {
       background: #47C86E;
       color: #fff; }
@@ -1163,9 +1268,10 @@ div.page-header-content {
     color: #000;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    width: 240px; }
+    width: 240px;
+    padding: 0px 20px; }
     .country-contact a strong {
       display: block;
       font-size: 20px;
@@ -1207,6 +1313,23 @@ div.blog-date {
   color: #818181;
   letter-spacing: 0;
   text-align: center; }
+
+div.form-element {
+  margin: 0px 0px 20px 0px; }
+  div.form-element input[type="text"],
+  div.form-element input[type="email"] {
+    width: 100%;
+    display: block;
+    height: 44px;
+    border-radius: 4px;
+    border: none;
+    background: #fff; }
+
+div.slider-mobile {
+  display: none !important; }
+
+div.video-desktop {
+  display: block !important; }
 
 @media screen and (max-width: 1279px) {
   .home-block-one {
@@ -1319,7 +1442,7 @@ div.blog-date {
       header ul li a {
         height: auto;
         display: block;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-decoration: none;
         padding: 5px 20px;
@@ -1343,29 +1466,68 @@ div.blog-date {
   body {
     padding-top: 60px; }
 
+  div.page-training div.col-md-6 img {
+    width: 100%; }
+
+  .digital_training_info {
+    height: auto;
+    margin: 0px; }
+    .digital_training_info a.btn {
+      margin-bottom: 20px;
+      margin-top: 0px;
+      height: 52px;
+      font-size: 14px; }
+    .digital_training_info p {
+      padding-top: 20px; }
+    .digital_training_info img {
+      position: relative;
+      top: auto;
+      margin: 0 auto;
+      display: block; }
+
   div.page-events a.event-item div.event-date span.month, div.page-events a.event-item div.event-date span.year {
     padding: 7px 5px; }
 
-  header div.logo {
-    height: 60px;
-    overflow: hidden; }
-    header div.logo a {
-      display: flex; }
-      header div.logo a span {
-        padding-top: 16px;
-        display: block;
-        color: #2474A4;
-        font-weight: bold; }
-    header div.logo img {
-      width: 78px;
-      margin: 0px 1px; }
+  header {
+    transition: 0.2s ease; }
+    header div.logo {
+      height: 60px;
+      overflow: hidden; }
+      header div.logo a {
+        display: flex; }
+        header div.logo a span {
+          padding-top: 16px;
+          display: block;
+          color: #2474A4;
+          font-weight: bold; }
+      header div.logo img {
+        width: 80px;
+        margin: 0px 0px 0px -10px;
+        height: 80px; }
+    header .logo-wrapper {
+      padding: 0px; }
 
   footer {
     padding: 20px 0px; }
+    footer div.copyright {
+      padding: 20px 0px; }
+      footer div.copyright span {
+        display: block; }
+    footer ul {
+      padding: 0px 20px 20px 20px; }
+      footer ul li {
+        text-align: center;
+        display: block; }
+
+  .partner-with-us h2 {
+    font-size: 28px; }
 
   .home-block-one div.slider-text {
     line-height: 40px;
     font-size: 28px; }
+
+  div.page-content div.page-divider {
+    display: none; }
 
   .featured-video-block div.block-title {
     font-size: 28px; }
@@ -1374,6 +1536,9 @@ div.blog-date {
     height: 480px; }
     .home-block-one div.slider-item {
       height: 480px; }
+
+  div.block-connect-with-us .subscription-form div.input-group button {
+    font-size: 12px; }
 
   header.expand {
     height: 500px;
@@ -1419,32 +1584,19 @@ div.blog-date {
       display: flex; }
     div.page-events a.event-item img {
       width: 100%;
+      height: auto;
       margin: 0px 0px 20px 0px; }
 
   .home-block-one div.slider-text {
     padding: 0px 20px;
-    font-size: 36px; }
-
-  .home-block-event .next-date-wrapper {
-    justify-content: center; }
-
-  .home-block-event .next-event-info .next-event-title,
-  .home-block-event .next-event-info .next-event-time {
-    text-align: center; }
-
-  .home-block-event .next-date-wrapper .next-date {
-    padding: 15px;
-    margin: 0px 20px 10px 0px; }
-
-  .home-block-event .next-event-info .next-event-country img {
-    display: block;
-    margin: 0 auto; }
+    font-size: 24px; }
 
   .featured-video-block div.block-title {
     text-align: center; }
 
   .featured-video-block {
-    padding: 15px 0px; }
+    padding: 15px 0px;
+    min-height: 0px; }
     .featured-video-block div.block-title {
       margin: 0px 0px 15px 0px; }
     .featured-video-block .video-block video {
@@ -1460,20 +1612,21 @@ div.blog-date {
     margin: 20px 0px 0px 0px; }
 
   div.block-digital-training div.container {
-    padding: 40px 0px; }
+    padding: 40px 15px; }
 
   div.block-connect .connect-buttons > div a svg {
     margin: 5px auto;
     height: 44px; }
 
   div.block-connect-with-us .subscription-form {
-    padding: 20px; }
+    padding: 0px; }
 
   div.block-connect.connect_bg .connect-buttons > div {
     margin: 10px 10px;
     width: 40%;
     padding: 10px;
-    min-height: 160px; }
+    min-height: 120px;
+    height: auto; }
 
   div.block-connect h2 {
     font-size: 28px; }
@@ -1496,14 +1649,16 @@ div.blog-date {
     text-align: left !important; }
 
   div.page-header {
-    height: 200px; }
+    height: 200px;
+    margin: 0px 0px 20px 0px; }
     div.page-header div.page-title {
       height: 200px; }
       div.page-header div.page-title h2 {
-        font-size: 28px;
-        margin: 10px 0px; }
-      div.page-header div.page-title span {
-        font-size: 12px; }
+        font-size: 24px;
+        margin: 10px 20px; }
+        div.page-header div.page-title h2 span {
+          font-size: 14px;
+          line-height: 1.5em; }
 
   div.page-ministry img {
     width: 100%; }
@@ -1523,13 +1678,6 @@ div.blog-date {
   div.partner-page a.btn.btn-become-partner {
     margin-bottom: 40px; }
 
-  footer ul {
-    border-bottom: thin solid #153c53;
-    margin: 20px -20px 20px -20px;
-    padding: 0px 20px 20px 20px; }
-    footer ul li {
-      text-align: center; }
-
   div.page-header-content {
     padding-top: 20px; }
 
@@ -1540,6 +1688,158 @@ div.blog-date {
     padding-top: 0px; }
 
   div.page-header.donate_bg {
-    height: auto; } }
+    height: auto; }
+
+  .price-values div.col-sm-6 {
+    width: 49%; }
+    .price-values div.col-sm-6 button.btn-amount {
+      margin: 0px 0px 20px 0px; }
+    .price-values div.col-sm-6 input[type="number"] {
+      margin: 0px 0px 20px 0px; }
+
+  div.page-ministry div.create-website div.col-4 a {
+    width: auto;
+    margin: 0px 10px;
+    height: 140px; }
+    div.page-ministry div.create-website div.col-4 a p {
+      display: none; }
+
+  div.page-ministry div.digital-training-block {
+    margin: 0px 0px 20px 0px; }
+    div.page-ministry div.digital-training-block div.col-md-6 {
+      padding: 0px; }
+    div.page-ministry div.digital-training-block h4 {
+      /* Empower Ministries: */
+      font-size: 16px;
+      color: #9A9A9A;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 7px 0px; }
+    div.page-ministry div.digital-training-block h2 {
+      /* FREE WEBSITE FOR EVE: */
+      font-size: 28px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+    div.page-ministry div.digital-training-block a.btn {
+      margin: 0px auto;
+      float: none;
+      margin-bottom: 20px; }
+    div.page-ministry div.digital-training-block p {
+      /* Easy and simple thre: */
+      font-size: 14px;
+      color: #000000;
+      margin: 7px 0px;
+      letter-spacing: 0;
+      text-align: center; }
+    div.page-ministry div.digital-training-block img {
+      width: 100%;
+      margin: 0px auto; }
+
+  div.page-event-single h2 {
+    margin: 20px 0px; }
+  div.page-event-single div.event-image {
+    margin: 0px -20px 20px -20px; }
+    div.page-event-single div.event-image img {
+      width: 100%;
+      margin: 10px 0px 0px 0px; }
+  div.page-event-single div.event-body {
+    padding: 20px 0px; }
+  div.page-event-single div.event-date {
+    text-align: left;
+    float: none;
+    margin: 0px 0px 10px 0px; }
+    div.page-event-single div.event-date span {
+      display: inline-block; }
+  div.page-event-single div.event-title {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px; }
+  div.page-event-single div.flag {
+    position: relative;
+    right: auto;
+    margin: 0px 0px 10px 0px; }
+  div.page-event-single .event-more-info ul {
+    display: block; }
+    div.page-event-single .event-more-info ul li {
+      margin: 20px 0px 0px 0px; }
+  div.page-event-single .upcoming-events {
+    border-top: thin solid #d8d8d8;
+    padding: 0px 0px 20px 0px;
+    margin-top: 20px; }
+    div.page-event-single .upcoming-events h2 {
+      margin: 0px -15px 20px -15px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff; }
+    div.page-event-single .upcoming-events a.event-item {
+      padding: 0px 0px 20px 0px;
+      margin-bottom: 20px;
+      display: block; }
+      div.page-event-single .upcoming-events a.event-item div.event-date {
+        margin: 0px; }
+      div.page-event-single .upcoming-events a.event-item div.event-title {
+        padding: 0px; }
+      div.page-event-single .upcoming-events a.event-item div.event-time {
+        padding: 0px; }
+
+  div.slider-mobile {
+    display: block !important; }
+
+  div.video-desktop {
+    display: none !important; }
+
+  .home-block-event {
+    padding: 20px 0px; }
+    .home-block-event div.col-md-10 {
+      padding: 0px; }
+      .home-block-event div.col-md-10 > div.row {
+        justify-content: center;
+        margin: 0px; }
+    .home-block-event div.col-md-4 {
+      padding: 0px;
+      width: 54%; }
+    .home-block-event div.col-md-3 {
+      width: 35%;
+      padding: 0px; }
+    .home-block-event .next-event-date-wrapper .next-event-date {
+      font-size: 24px;
+      color: #D73030;
+      line-height: 20px;
+      margin-top: 5px; }
+      .home-block-event .next-event-date-wrapper .next-event-date span {
+        font-size: 12px;
+        line-height: 14px; }
+    .home-block-event .next-event-date-wrapper .next-arrow-2 {
+      display: none; }
+    .home-block-event .next-event-date-wrapper .next-arrow {
+      margin: -10px 10px 0px 0px; }
+      .home-block-event .next-event-date-wrapper .next-arrow svg {
+        width: 20px;
+        height: 80px; }
+    .home-block-event .next-event-info .next-event-title {
+      font-size: 16px;
+      text-align: center;
+      margin: 10px 0px; }
+    .home-block-event .next-event-info .next-event-time {
+      text-align: Center; }
+    .home-block-event .next-event-info .next-event-country img {
+      margin: 0 auto;
+      width: 44px;
+      display: block; }
+    .home-block-event .next-date-wrapper .next-date {
+      width: 64px;
+      padding: 10px 0px;
+      font-size: 24px;
+      margin: 0px 10px 10px 0px;
+      line-height: 20px; }
+      .home-block-event .next-date-wrapper .next-date span {
+        font-size: 12px; }
+    .home-block-event .next-date-wrapper .next-date-text {
+      margin: 10px 0px 0px 0px;
+      line-height: 18px;
+      font-size: 16px; }
+      .home-block-event .next-date-wrapper .next-date-text span {
+        font-size: 12px; } }
 
 /*# sourceMappingURL=app.css.map */

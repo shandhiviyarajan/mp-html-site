@@ -44,11 +44,13 @@
     font-weight: 700;
     position: relative;
     text-align: Center;
+    text-transform: uppercase;
     height: 200px;
     width: 100%;
     font-size: 48px;
     z-index: 200;
     color: #FFFFFF;
+    max-width: 800px;
     line-height: 56px;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
@@ -251,7 +253,7 @@ div.block-digital-training {
     line-height: 40px;
   }
   h2 {
-    font-size:36px;
+    font-size: 36px;
     font-weight: bold;
     margin: 10px 0px;
   }
@@ -276,7 +278,7 @@ div.block-digital-training {
 div.block-connect-with-us {
   height: 360px;
   div.container {
-    padding: 30px 0px;
+    padding: 30px 15px;
     svg {
       width: 160px;
       display: block;
@@ -372,6 +374,7 @@ div.block-connect-with-us {
   a {
     svg {
       margin: 10px 0px;
+      width: 32px;
     }
     margin: 0px auto;
     height: 258px;
@@ -422,10 +425,12 @@ div.block-connect-with-us {
     height: 52px;
     border: none;
     font-size: 16px;
-    line-height: 33px;
-    padding-top: 10px;
+    line-height: 50px;
+    padding: 0px;
     margin: 0px;
-    max-width: 100%;
+    max-width: 320px;
+    float: right;
+    font-weight: bold;
 
   }
 }
@@ -486,10 +491,11 @@ div.block-connect {
 
         svg {
           margin: 10px auto;
+          width: 40px;
         }
 
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         color: #246E9E;
         letter-spacing: 0;
         text-align: center;
@@ -586,12 +592,13 @@ div.partner-with-us {
 
   h2 {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 32px;
     color: #000;
     text-align: Center;
   }
 
   a.btn {
+    font-size: 16px;
     svg {
       display: inline-block;
     }
